@@ -1,4 +1,4 @@
-package bootstrap;
+package com.sebworks.vaadstrap;
 
 import com.vaadin.ui.CssLayout;
 
