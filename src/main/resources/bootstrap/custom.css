@@ -1,0 +1,13 @@
+.v-widget {
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: left;
+    white-space: normal;
+	display: block;
+    margin-bottom: 4px !important;
+    vertical-align: initial;    
+}
+.v-csslayout-container {
+	display: block;
+}
