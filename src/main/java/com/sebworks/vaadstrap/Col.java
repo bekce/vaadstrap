@@ -12,9 +12,9 @@ public class Col extends CssLayout {
 	public Col() {
 	}
 	
-	public Col setColStyles(BootstrapStyle...styles){
+	public Col setStyles(Style...styles){
 		StringBuilder sb = new StringBuilder();
-		for (BootstrapStyle style : styles) {
+		for (Style style : styles) {
 			sb.append(style.getStyleName()).append(' ');
 		}
 		setStyleName(sb.toString());
@@ -32,4 +32,5 @@ public class Col extends CssLayout {
 		c.setWidth(100, Unit.PERCENTAGE);
 		super.addComponentAsFirst(c);
 	}
+
 }

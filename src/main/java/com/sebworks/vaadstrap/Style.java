@@ -8,7 +8,7 @@ package com.sebworks.vaadstrap;
  * @author seb
  *
  */
-public interface BootstrapStyle {
+public interface Style {
 
 	String getStyleName();
 

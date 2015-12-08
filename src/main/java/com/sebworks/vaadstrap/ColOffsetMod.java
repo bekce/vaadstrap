@@ -4,7 +4,7 @@ package com.sebworks.vaadstrap;
  * @author seb
  *
  */
-public enum ColOffsetMod implements BootstrapStyle {
+public enum ColOffsetMod implements Style {
 
 	XS_OFFSET_1,XS_OFFSET_2,XS_OFFSET_3,XS_OFFSET_4,XS_OFFSET_5,XS_OFFSET_6,XS_OFFSET_7,XS_OFFSET_8,XS_OFFSET_9,XS_OFFSET_10,XS_OFFSET_11,XS_OFFSET_12,
 	SM_OFFSET_1,SM_OFFSET_2,SM_OFFSET_3,SM_OFFSET_4,SM_OFFSET_5,SM_OFFSET_6,SM_OFFSET_7,SM_OFFSET_8,SM_OFFSET_9,SM_OFFSET_10,SM_OFFSET_11,SM_OFFSET_12,

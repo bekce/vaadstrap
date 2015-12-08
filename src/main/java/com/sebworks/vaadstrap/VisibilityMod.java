@@ -4,7 +4,7 @@ package com.sebworks.vaadstrap;
  * @author seb
  *
  */
-public enum VisibilityMod implements BootstrapStyle {
+public enum VisibilityMod implements Style {
 
 	VISIBLE_XS, VISIBLE_SM, VISIBLE_MD, VISIBLE_LG,
 	VISIBLE_XS_BLOCK, VISIBLE_SM_BLOCK, VISIBLE_MD_BLOCK, VISIBLE_LG_BLOCK,

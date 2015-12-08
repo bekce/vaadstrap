@@ -11,8 +11,11 @@ import com.vaadin.ui.CssLayout;
 @StyleSheet({ "bootstrap.min.css", "bootstrap-theme.min.css", "custom.css" })
 @JavaScript({ "jquery-1.11.3.min.js", "bootstrap.min.js" })
 public class Container extends CssLayout {
+
+	private boolean fluid = false;
+
 	public Container() {
-		addStyleName("container");
+		setFluid(false);
 	}
 
 	public Row addRow() {
@@ -20,4 +23,15 @@ public class Container extends CssLayout {
 		addComponent(row);
 		return row;
 	}
+
+	public Container setFluid(boolean fluid) {
+		this.fluid = fluid;
+		setStyleName(fluid ? "container-fluid" : "container");
+		return this;
+	}
+
+	public boolean isFluid() {
+		return fluid;
+	}
+
 }

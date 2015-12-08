@@ -6,7 +6,8 @@
 	<artifactId>vaadstrap</artifactId>
 	<packaging>jar</packaging>
 	<version>0.1</version>
-	<name>bootstrap grid system for vaadin</name>
+	<name>VaadStrap</name>
+	<description>Bootstrap Grid System for Vaadin</description>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

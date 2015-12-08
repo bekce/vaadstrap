@@ -4,7 +4,7 @@ package com.sebworks.vaadstrap;
  * @author seb
  *
  */
-public enum ColMod implements BootstrapStyle {
+public enum ColMod implements Style {
 
 	XS_1,XS_2,XS_3,XS_4,XS_5,XS_6,XS_7,XS_8,XS_9,XS_10,XS_11,XS_12,
 	SM_1,SM_2,SM_3,SM_4,SM_5,SM_6,SM_7,SM_8,SM_9,SM_10,SM_11,SM_12,

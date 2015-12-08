@@ -11,9 +11,9 @@ public class Row extends CssLayout {
 		addStyleName("row");
 	}
 	
-	public Col addCol(BootstrapStyle...styles){
+	public Col addCol(Style...styles){
 		Col col = new Col();
-		col.setColStyles(styles);
+		col.setStyles(styles);
 		addComponent(col);
 		return col;
 	}
