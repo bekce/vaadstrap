@@ -5,7 +5,7 @@
 	<groupId>com.sebworks</groupId>
 	<artifactId>vaadstrap</artifactId>
 	<packaging>jar</packaging>
-	<version>0.1</version>
+	<version>0.1.1</version>
 	<name>VaadStrap</name>
 	<description>Bootstrap Grid System for Vaadin</description>
 
@@ -91,7 +91,7 @@
 			<scope>provided</scope>
 		</dependency>
 
-		<!-- This can be replaced with TestNG or some other test framework supported 
+		<!-- This can be replaced with TestNG or some other test framework supported
 			by the surefire plugin -->
 		<dependency>
 			<groupId>junit</groupId>
@@ -129,7 +129,6 @@
 							<!-- Package format version - do not change -->
 							<Vaadin-Package-Version>1</Vaadin-Package-Version>
 							<Vaadin-License-Title>${Vaadin-License-Title}</Vaadin-License-Title>
-							<Vaadin-Widgetsets>com.sebworks.vaadstrap.WidgetSet</Vaadin-Widgetsets>
 						</manifestEntries>
 					</archive>
 				</configuration>
@@ -191,7 +190,7 @@
 			</plugin>
 		</plugins>
 
-		<!-- This is needed for the sources required by the client-side compiler 
+		<!-- This is needed for the sources required by the client-side compiler
 			to be included in the produced JARs -->
 		<resources>
 			<resource>
