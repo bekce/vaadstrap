@@ -1,5 +1,6 @@
 package com.sebworks.vaadstrap;
 
+
 /**
  * @author seb
  *
@@ -11,10 +12,27 @@ public enum ColMod implements Style {
 	MD_1,MD_2,MD_3,MD_4,MD_5,MD_6,MD_7,MD_8,MD_9,MD_10,MD_11,MD_12,
 	LG_1,LG_2,LG_3,LG_4,LG_5,LG_6,LG_7,LG_8,LG_9,LG_10,LG_11,LG_12,
 	;
+	
+	Threshold threshold;
+	int num;
+	String value;
+	
+	private ColMod() {
+		this.threshold = Threshold.valueOf(name().substring(0, 2));
+		this.num = Integer.parseInt(name().substring(3));
+		this.value = String.format("col-%s", name().toLowerCase().replaceAll("_", "-"));
+	}
 
 	@Override
 	public String getStyleName(){
-		return String.format("col-%s", name().toLowerCase().replaceAll("_", "-"));
+		return value;
 	}
-	
+
+	static ColMod get(Threshold t, int num) {
+		for (ColMod cm : values()) {
+			if (cm.threshold == t && cm.num == num)
+				return cm;
+		}
+		return null;
+	}
 }

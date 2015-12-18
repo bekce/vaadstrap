@@ -13,8 +13,10 @@ import com.vaadin.ui.CssLayout;
 public class Container extends CssLayout {
 
 	private boolean fluid = false;
+	private String defaultStyle = "container";
 
 	public Container() {
+		setImmediate(true);
 		setFluid(false);
 	}
 
@@ -26,12 +28,24 @@ public class Container extends CssLayout {
 
 	public Container setFluid(boolean fluid) {
 		this.fluid = fluid;
-		setStyleName(fluid ? "container-fluid" : "container");
-		return this;
+		defaultStyle = fluid ? "container-fluid" : "container";
+		return clearStyles();
 	}
 
 	public boolean isFluid() {
 		return fluid;
+	}
+
+	public Container clearStyles() {
+		setStyleName(defaultStyle);
+		return this;
+	}
+
+	public Container addStyles(Style... styles) {
+		for (Style style : styles) {
+			addStyleName(style.getStyleName());
+		}
+		return this;
 	}
 
 }
