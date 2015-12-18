@@ -17,8 +17,9 @@ public class Row extends CssLayout {
 	
 	/**
 	 * Add a column with given styles.
-	 * @see {@link ColMod}, {@link ColOffsetMod}, {@link MarginMod}
-	 * @param styles
+	 * @see ColMod
+	 * @see ColOffsetMod
+	 * @see MarginMod
 	 * @return the added column
 	 */
 	public Col addCol(Style...styles){
