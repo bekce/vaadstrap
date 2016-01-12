@@ -8,7 +8,7 @@ The library is ready to be used by any Vaadin project and requires no widgetset 
 <dependency>
    <groupId>com.sebworks</groupId>
    <artifactId>vaadstrap</artifactId>
-   <version>0.1</version>
+   <version>0.1.2</version>
 </dependency>
 
 <repository>
