@@ -1,5 +1,7 @@
 package com.sebworks.vaadstrap;
 
+import java.util.Locale;
+
 /**
  * @author seb
  *
@@ -18,7 +20,7 @@ public enum VisibilityMod implements Style {
 
 	@Override
 	public String getStyleName() {
-		return name().toLowerCase().replaceAll("_", "-");
+		return name().toLowerCase(Locale.ENGLISH).replace('_', '-');
 	}
 
 }

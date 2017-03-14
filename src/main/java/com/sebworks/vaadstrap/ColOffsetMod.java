@@ -1,5 +1,7 @@
 package com.sebworks.vaadstrap;
 
+import java.util.Locale;
+
 /**
  * @author seb
  *
@@ -14,7 +16,7 @@ public enum ColOffsetMod implements Style {
 
 	@Override
 	public String getStyleName(){
-		return String.format("col-%s", name().toLowerCase().replaceAll("_", "-"));
+		return String.format("col-%s", name().toLowerCase(Locale.ENGLISH).replace('_', '-'));
 	}
 	
 }
