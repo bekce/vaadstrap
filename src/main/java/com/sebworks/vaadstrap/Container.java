@@ -16,7 +16,6 @@ public class Container extends CssLayout {
 	private String defaultStyle = "container";
 
 	public Container() {
-		setImmediate(true);
 		setFluid(false);
 	}
 

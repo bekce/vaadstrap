@@ -3,7 +3,6 @@ package com.sebworks.vaadstrap;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 
-import com.vaadin.ui.AbstractComponent;
 import com.vaadin.ui.Component;
 import com.vaadin.ui.CssLayout;
 
@@ -16,7 +15,6 @@ public class Col extends CssLayout {
 	private Style childrenStyle;
 
 	public Col() {
-		setImmediate(true);
 	}
 
 	public Col(@Min(1) @Max(12) int sm, @Min(1) @Max(12) int md) {
@@ -54,8 +52,6 @@ public class Col extends CssLayout {
 	@Override
 	public void addComponent(Component c) {
 		c.setWidth(100, Unit.PERCENTAGE);
-		if (c instanceof AbstractComponent)
-			((AbstractComponent) c).setImmediate(true);
 		if (childrenStyle != null) {
 			c.addStyleName(childrenStyle.getStyleName());
 		}
@@ -65,8 +61,6 @@ public class Col extends CssLayout {
 	@Override
 	public void addComponentAsFirst(Component c) {
 		c.setWidth(100, Unit.PERCENTAGE);
-		if (c instanceof AbstractComponent)
-			((AbstractComponent) c).setImmediate(true);
 		if (childrenStyle != null) {
 			c.addStyleName(childrenStyle.getStyleName());
 		}

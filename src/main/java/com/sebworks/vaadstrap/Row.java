@@ -11,7 +11,6 @@ public class Row extends CssLayout {
 	private String defaultStyle = "row";
 	
 	public Row() {
-		setImmediate(true);
 		clearStyles();
 	}
 	
