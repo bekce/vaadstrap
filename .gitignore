@@ -7,3 +7,5 @@ widgetsets/
 /target
 styles.css
 addons.scss
+.idea/
+*.iml
