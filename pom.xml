@@ -5,8 +5,8 @@
 	<groupId>com.sebworks</groupId>
 	<artifactId>vaadstrap</artifactId>
 	<packaging>jar</packaging>
-	<version>0.2-SNAPSHOT</version>
-	<name>vaadstrap</name>
+	<version>0.2</version>
+	<name>VaadStrap</name>
 	<description>Bootstrap Grid System for Vaadin</description>
 
 	<properties>
