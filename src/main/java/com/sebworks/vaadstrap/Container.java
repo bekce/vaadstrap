@@ -6,10 +6,9 @@ import com.vaadin.ui.CssLayout;
 
 /**
  * @author seb
- *
  */
-@StyleSheet({ "bootstrap.min.css", "bootstrap-theme.min.css", "custom.css" })
-@JavaScript({ "jquery-1.11.3.min.js", "bootstrap.min.js" })
+@StyleSheet({"bootstrap.min.css", "bootstrap-theme.min.css", "custom.css"})
+@JavaScript({"jquery-1.11.3.min.js", "bootstrap.min.js"})
 public class Container extends CssLayout {
 
 	private boolean fluid = false;

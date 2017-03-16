@@ -1,12 +1,9 @@
 package com.sebworks.vaadstrap;
 
 /**
- * 
+ * @author seb
  * @see ColMod
  * @see ColOffsetMod
- * 
- * @author seb
- *
  */
 public interface Style {
 

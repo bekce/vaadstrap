@@ -8,7 +8,6 @@ import com.vaadin.ui.CssLayout;
 
 /**
  * @author seb
- *
  */
 public class Col extends CssLayout {
 
@@ -38,9 +37,14 @@ public class Col extends CssLayout {
 		return setDefaultChildrenStyle(childrenStyle, false);
 	}
 
-	public Col setDefaultChildrenStyle(Style childrenStyle, boolean applyToAll) {
+	/**
+	 * @param childrenStyle   children style to apply, this is usually some margin, with {@link MarginMod}.
+	 * @param applyToExisting if true, applies given style to all existing children
+	 * @return
+	 */
+	public Col setDefaultChildrenStyle(Style childrenStyle, boolean applyToExisting) {
 		this.childrenStyle = childrenStyle;
-		if (applyToAll) {
+		if (applyToExisting) {
 			for (int i = 0; i < getComponentCount(); i++) {
 				Component component = getComponent(i);
 				component.addStyleName(childrenStyle.getStyleName());

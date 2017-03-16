@@ -4,32 +4,30 @@ import com.vaadin.ui.CssLayout;
 
 /**
  * @author seb
- *
  */
 public class Row extends CssLayout {
-	
-	private String defaultStyle = "row";
-	
+
 	public Row() {
 		clearStyles();
 	}
-	
+
 	/**
 	 * Add a column with given styles.
+	 *
+	 * @return the added column
 	 * @see ColMod
 	 * @see ColOffsetMod
 	 * @see MarginMod
-	 * @return the added column
 	 */
-	public Col addCol(Style...styles){
+	public Col addCol(Style... styles) {
 		Col col = new Col();
 		col.addStyles(styles);
 		addComponent(col);
 		return col;
 	}
-	
+
 	public Row clearStyles() {
-		setStyleName(defaultStyle);
+		setStyleName("row");
 		return this;
 	}
 
