@@ -26,10 +26,19 @@ public class Row extends CssLayout {
 	}
 
 	/**
-	 * Add given col to this row
-	 * @param col col to add
-	 * @return this
+	 * @deprecated use {@link #addNewCol(Style...)}
 	 */
+	@Deprecated
+	public Col addCol(Style... styles) {
+		return addNewCol(styles);
+	}
+
+
+		/**
+		 * Add given col to this row
+		 * @param col col to add
+		 * @return this
+		 */
 	public Row addCol(Col col){
 		addComponent(col);
 		return this;

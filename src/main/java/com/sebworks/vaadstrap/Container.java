@@ -27,6 +27,14 @@ public class Container extends CssLayout {
 	}
 
 	/**
+	 * @deprecated use {@link #addNewRow()}
+	 */
+	@Deprecated
+	public Row addRow() {
+		return addNewRow();
+	}
+
+	/**
 	 * Add given row to the container
 	 * @param row row to add
 	 * @return this
