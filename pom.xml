@@ -6,7 +6,7 @@
 	<artifactId>vaadstrap</artifactId>
 	<packaging>jar</packaging>
 	<version>0.2-SNAPSHOT</version>
-	<name>VaadStrap</name>
+	<name>vaadstrap</name>
 	<description>Bootstrap Grid System for Vaadin</description>
 
 	<properties>

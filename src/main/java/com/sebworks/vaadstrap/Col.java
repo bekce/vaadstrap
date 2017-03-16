@@ -16,9 +16,27 @@ public class Col extends CssLayout {
 	public Col() {
 	}
 
-	public Col(@Min(1) @Max(12) int sm, @Min(1) @Max(12) int md) {
+	public Col(Style... styles){
 		this();
-		addStyles(ColMod.get(Threshold.SM, sm), ColMod.get(Threshold.MD, md));
+		addStyles(styles);
+	}
+
+	public Col(@Min(1) @Max(12) int sm,
+						 @Min(1) @Max(12) int md) {
+		this();
+		addStyles(ColMod.get(Threshold.SM, sm),
+				ColMod.get(Threshold.MD, md));
+	}
+
+	public Col(@Min(1) @Max(12) int xs,
+						 @Min(1) @Max(12) int sm,
+						 @Min(1) @Max(12) int md,
+						 @Min(1) @Max(12) int lg) {
+		this();
+		addStyles(ColMod.get(Threshold.XS, xs),
+				ColMod.get(Threshold.SM, sm),
+				ColMod.get(Threshold.MD, md),
+				ColMod.get(Threshold.LG, lg));
 	}
 
 	public Col clearStyles() {
@@ -33,16 +51,20 @@ public class Col extends CssLayout {
 		return this;
 	}
 
-	public Col setDefaultChildrenStyle(Style childrenStyle) {
-		return setDefaultChildrenStyle(childrenStyle, false);
+	/**
+	 * @param childrenStyle   children style to apply, this is usually some margin, with {@link MarginMod}.
+	 * @return this object
+	 */
+	public Col setChildrenStyle(Style childrenStyle) {
+		return setChildrenStyle(childrenStyle, false);
 	}
 
 	/**
 	 * @param childrenStyle   children style to apply, this is usually some margin, with {@link MarginMod}.
 	 * @param applyToExisting if true, applies given style to all existing children
-	 * @return
+	 * @return this object
 	 */
-	public Col setDefaultChildrenStyle(Style childrenStyle, boolean applyToExisting) {
+	public Col setChildrenStyle(Style childrenStyle, boolean applyToExisting) {
 		this.childrenStyle = childrenStyle;
 		if (applyToExisting) {
 			for (int i = 0; i < getComponentCount(); i++) {
@@ -50,6 +72,16 @@ public class Col extends CssLayout {
 				component.addStyleName(childrenStyle.getStyleName());
 			}
 		}
+		return this;
+	}
+
+	/**
+	 * Add components with builder pattern
+	 * @param components components to add
+	 * @return this
+	 */
+	public Col add(Component... components){
+		addComponents(components);
 		return this;
 	}
 
