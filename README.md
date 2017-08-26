@@ -18,10 +18,10 @@ The library is ready to be used by any Vaadin project and requires no widgetset 
 </repository>
 ```
 
-|Branch|Compatible Vaadin Version|
-|------|-------------------------|
-|master|8.x|
-|vaadin7|7.x|
+|Branch |Version|Compatible With|
+|-------|-------|----------|
+|master |0.2.1|Vaadin 8.x|
+|vaadin7|0.1.2|Vaadin 7.x|
 
 Usage example: 
 
